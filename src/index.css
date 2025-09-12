@@ -1,0 +1,76 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #000000;
+}
+
+@theme {
+  --color-primary: #24ff8e;
+  --color-primary-50: #edfff5;
+  --color-primary-100: #d5ffea;
+  --color-primary-200: #aeffd6;
+  --color-primary-300: #6fffb7;
+  --color-primary-hover: #1ad87a;
+  --color-primary-pressed: #11b367;
+  --color-primary-disabled: #a2f4cc;
+  --color-primary-selected: #132F21;
+  
+  --color-success: #22c55e;
+  --color-warning: #facc15;
+  --color-error: #ef4444;
+  --color-info: #3b82f6;
+  --color-gray-50: #f5f6f8;
+  --color-gray-100: #edeef2;
+  --color-gray-200: #dee0e7;
+  --color-gray-300: #c7cad5;
+  --color-gray-400: #b3b6c6;
+  --color-gray-500: #9fa1b5;
+  --color-gray-600: #8a89a2;
+  --color-gray-700: #77768c;
+  --color-gray-800: #616172;
+  --color-gray-900: #51515e;
+  --color-card-bg: #151e2f80;
+  --color-card-bg-border: #152133;
+  --color-card-border: #ffffff1a;
+  --color-card-selected-bg: #1f2a40;
+  --color-card-cancel: #1C2332;
+  --color-border-card: #424242;
+
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+@layer utilities {
+  @keyframes fade-in {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+  @keyframes slide-in {
+    0% { transform: translateY(20px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+  }
+
+  .animate-fade-in {
+    animation: fade-in 0.3s ease-out forwards;
+  }
+
+  .animate-slide-in {
+    animation: slide-in 0.3s ease-out forwards;
+  }
+}

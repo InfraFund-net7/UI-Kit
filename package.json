@@ -1,5 +1,5 @@
 {
-  "name": "@Infrafund/uikit",
+  "name": "@infrafund/if-ui",
   "version": "1.0.0",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -15,10 +15,24 @@
   "devDependencies": {
     "@storybook/addon-docs": "^9.1.5",
     "@storybook/addon-onboarding": "^9.1.5",
+    "@storybook/addon-styling": "^2.0.0",
     "@storybook/react-vite": "^9.1.5",
+    "@tailwindcss/vite": "^4.1.13",
     "@types/react": "^19.1.12",
     "@types/react-dom": "^19.1.9",
+    "@vitejs/plugin-react": "^4.7.0",
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6",
     "storybook": "^9.1.5",
+    "tailwindcss": "^4.1.13",
     "typescript": "^5.9.2"
+  },
+  "files": [
+    "dist",
+    "src/index.css"
+  ],
+  "exports": {
+    ".": "./dist/index.js",
+    "./styles": "./src/index.css"
   }
 }
