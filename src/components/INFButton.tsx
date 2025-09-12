@@ -1,4 +1,4 @@
-interface IFButtonProps {
+interface INFButtonProps {
   children: React.ReactNode;
   variant?: "filled" | "outlined" | "canceled";
   onClick?: () => void;
@@ -7,14 +7,14 @@ interface IFButtonProps {
   type?: "button" | "submit" | "reset";
 }
 
-export function IFButton({
+export function INFButton({
   children,
   variant = "filled",
   onClick,
   className = "",
   disabled = false,
   type = "button",
-}: IFButtonProps) {
+}: INFButtonProps) {
   const baseClasses =
     "px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 ease-in-out outline-none border-2";
 

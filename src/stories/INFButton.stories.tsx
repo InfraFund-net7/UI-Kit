@@ -1,10 +1,10 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
 import { fn } from "storybook/test";
-import { IFButton } from '../components/IFButton';
+import { INFButton } from '../components/INFButton';
 
-const meta: Meta<typeof IFButton> = {
-  title: 'IFUI/Button',
-  component: IFButton,
+const meta: Meta<typeof INFButton> = {
+  title: 'INFUI/Button',
+  component: INFButton,
   parameters: {
     layout: 'centered',
   },
@@ -26,9 +26,9 @@ const meta: Meta<typeof IFButton> = {
   },
   args: {
     onClick: fn(),
-    children: 'IFUI Button',
+    children: 'INFUI Button',
   },
-} satisfies Meta<typeof IFButton>;
+} satisfies Meta<typeof INFButton>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
@@ -66,7 +66,7 @@ export const Disabled: Story = {
 export const DarkModeTest: Story = {
   render: (args) => (
     <div className="dark p-4 bg-gray-900 rounded-lg">
-      <IFButton {...args} variant="outlined" children="Dark Mode Test" />
+      <INFButton {...args} variant="outlined" children="Dark Mode Test" />
     </div>
   ),
   parameters: { globals: { darkMode: true } },
