@@ -1,1 +1,1 @@
-export { IFButton } from './components/IFButton';
+export { INFButton } from './components/INFButton';
