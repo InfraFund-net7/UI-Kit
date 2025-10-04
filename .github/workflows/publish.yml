@@ -4,13 +4,12 @@ on:
   release:
     types: [created]  # Triggers on new release (e.g., from a tag like v1.0.0)
 
-permissions:
-  contents: read
-  id-token: write  # Required for OIDC authentication with GitHub Packages
-
 jobs:
   publish:
     runs-on: ubuntu-latest
+    permissions:
+          contents: read
+          packages: write  # Explicitly allow package creation/publishing
     steps:
       - uses: actions/checkout@v4
 
