@@ -1,5 +1,5 @@
 {
-  "name": "@InfraFund-net7/if-ui",
+  "name": "@infrafund-net7/ui-kit",
   "version": "1.0.0",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
