@@ -37,6 +37,6 @@
     "./styles": "./src/index.css"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
+    "access": "public"
   }
 }
