@@ -20,7 +20,7 @@
     ".": "./dist/index.js"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
+    "access": "public"
   },
   "devDependencies": {
     "@types/node": "^24.7.0",
