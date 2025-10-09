@@ -1,6 +1,6 @@
 {
   "name": "@infrafund-net7/ui-kit",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "style": "dist/index.css",
@@ -18,7 +18,8 @@
     "dist"
   ],
   "exports": {
-    ".": "./dist/index.js"
+    ".": "./dist/index.js",
+    "./style.css": "./dist/index.css"
   },
   "publishConfig": {
     "access": "public"
